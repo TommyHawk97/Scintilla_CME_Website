@@ -17,6 +17,7 @@
 		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/loader.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
@@ -25,10 +26,13 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
-
+	<div class="loader-wrapper">
+    	<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+	<div class="content">
+		
 		<!-- Header -->
 			<div id="header">
-						
 				<!-- Logo -->
 					<!-- <h1><a href="{{ site.baseurl }}/index.html" id="logo">Scintilla <em>CME</em></a></h1> -->
 					 <a href="/" style="color: #FFFFFF;"><img alt="Scintilla CME" src="{{ site.baseurl }}/assets/images/scintilla_logo_web_banner_no_background.png?w=960"></a>
@@ -52,5 +56,8 @@
 							<li {% if current[1] == 'about' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
 						</ul>
 					</nav>
-
-			</div>
+				</div>
+			
+		
+	
+	
