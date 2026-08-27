@@ -12,6 +12,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ site.baseurl }}/assets/js/loader.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
@@ -25,33 +26,33 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
-	
-		<!-- Header -->
-			<div id="header">
-				<!-- Logo -->
-					<!-- <h1><a href="{{ site.baseurl }}/index.html" id="logo">Scintilla <em>CME</em></a></h1> -->
-					 <a href="/" style="color: #FFFFFF;"><img alt="Scintilla CME" src="{{ site.baseurl }}/assets/images/scintilla_logo_web_banner_no_background.png?w=960"></a>
-				
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							{% assign current = page.url | downcase | split: '/' %}
-							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
-							<li>
-								<a href="">Technologies</a>
+			<div id="content">
+				<!-- Header -->
+					<div id="header">
+						<!-- Logo -->
+							<!-- <h1><a href="{{ site.baseurl }}/index.html" id="logo">Scintilla <em>CME</em></a></h1> -->
+							<a href="/" style="color: #FFFFFF;"><img alt="Scintilla CME" src="{{ site.baseurl }}/assets/images/scintilla_logo_web_banner_no_background.png?w=960"></a>
+						
+						<!-- Nav -->
+							<nav id="nav">
 								<ul>
-									<li><a href="{{ site.baseurl }}/technologies/alkaline-fuel-cell/">Alkaline Fuel Cell</a></li>
-									<li><a href="{{ site.baseurl }}/technologies/anaerobic-digestion/">Anaerobic Digestion</a></li>
-									<li><a href="{{ site.baseurl }}/technologies/carbon-capture/">Carbon Capture</a></li>
-									<li><a href="{{ site.baseurl }}/technologies/gasification/">Gasification</a></li>
-									<li><a href="{{ site.baseurl }}/technologies/gas-reformation/">Gas Reformation</a></li>
+									{% assign current = page.url | downcase | split: '/' %}
+									<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
+									<li>
+										<a href="">Technologies</a>
+										<ul>
+											<li><a href="{{ site.baseurl }}/technologies/alkaline-fuel-cell/">Alkaline Fuel Cell</a></li>
+											<li><a href="{{ site.baseurl }}/technologies/anaerobic-digestion/">Anaerobic Digestion</a></li>
+											<li><a href="{{ site.baseurl }}/technologies/carbon-capture/">Carbon Capture</a></li>
+											<li><a href="{{ site.baseurl }}/technologies/gasification/">Gasification</a></li>
+											<li><a href="{{ site.baseurl }}/technologies/gas-reformation/">Gas Reformation</a></li>
+										</ul>
+									</li>
+									<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
+									<li {% if current[1] == 'about' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
 								</ul>
-							</li>
-							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
-							<li {% if current[1] == 'about' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
-						</ul>
-					</nav>
-			</div>
+							</nav>
+					</div>
 			
 		
 	
