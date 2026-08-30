@@ -17,13 +17,14 @@
   background-color: #242f3f;
   display:flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 .loader {
-  display: inline-block;
+  display: flex;
   width: 30px;
   height: 30px;
-  position: relative;
+  top: 350px; /* Change the position of the loader vertically */
+  position: absolute;
   border: 4px solid #Fff;
   animation: loader 2s infinite ease;
 }

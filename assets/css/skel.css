@@ -15,9 +15,10 @@
   align-items: center;
 }
 .loader {
-  display: inline-block;
+  display: flex;
   width: 30px;
   height: 30px;
+  top: 250px; /* Change the position of the loader vertically */
   position: relative;
   border: 4px solid #Fff;
   animation: loader 2s infinite ease;
