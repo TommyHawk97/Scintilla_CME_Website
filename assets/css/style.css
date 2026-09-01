@@ -1,6 +1,5 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-
 /*
 	Arcana by HTML5 UP
 	html5up.net | @n33co
@@ -781,24 +780,6 @@
 				.wrapper.style3 .button:hover {
 					color: #37c0fb !important;
 				}
-
-/* CTA */
-
-	#cta {
-		text-align: center;
-		padding: 3.5em 0;
-	}
-
-		#cta header h2 {
-			display: inline-block;
-			vertical-align: middle;
-			margin: 0;
-		}
-
-		#cta header .button {
-			vertical-align: middle;
-			margin-left: 1em;
-		}
 
 /* Footer */
 
