@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Arcana
 layout: default
 ---
 <!DOCTYPE HTML>
@@ -11,7 +11,7 @@ layout: default
 <html>
 	<head>
 	<style>
-	/* Blog Critical CSS and styles that are only required for this page */
+	/* Technologies Page Critical CSS */
 
 	/* Basic */
 
@@ -24,7 +24,6 @@ layout: default
 		line-height: 1.65em;
 	}
 
-
 	a {
 		color: #37c0fb;
 		text-decoration: none;
@@ -32,42 +31,25 @@ layout: default
 	}
 
 	p, ul {
-		margin:0 0 2em 0;
+		margin: 0 0 2em 0;
 	}
 
-	h2, h3 {
+	h2 {
 		color: inherit;
 		font-weight: 600;
 		line-height: 1.75em;
 		margin-bottom: 1em;
-	}
-
-	h2 {
 		font-size: 1.75em;
 		letter-spacing: -0.025em;
 	}
 
-	h3 {
-		font-size: 1.2em;
-		letter-spacing: -0.025em;
+	header p {
+		color: #999999;
+		font-size: 1.25em;
+		position: relative;
+		margin-top: -1.25em;
+		margin-bottom: 2.25em;
 	}
-
-	header.major {
-		text-align: center;
-		margin: 0 0 2em 0;
-	}
-
-		header.major h2 {
-			font-size: 2.25em;
-		}
-
-	footer {
-		margin: 0 0 3em 0;
-	}
-
-		footer > :last-child {
-			margin-bottom: 0;
-		}
 
 	/* Form */
 
@@ -103,71 +85,45 @@ layout: default
 			border-radius: 5px;
 		}
 		
-		.image.left {
+		.image.featured {
 			display: block;
-			float: left;
-			margin: 0 2em 2em 0;
-			position: relative;
-			top: 0.25em;
+			margin: 0 0 2em 0;
 		}
 		
-			.image.left img {
+			.image.featured img {
 				display: block;
 				width: 100%;
 			}
-
-	/* Icon */
-			
-	.icon {
-		position: relative;
-		text-decoration: none;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
 		
+	/* Icon */
+
 		.icon > .label {
 			display: none;
+		
 		}
 
 	/* Lists */
-		
-			ul.icons li {
-				display: inline-block;
-				line-height: 1em;
-				padding-left: 1.5em;
+
+			ul.icons li span {
+				font-size:2em; border:0;
 			}
 			
-				ul.icons li:first-child {
-					padding-left: 0;
-				}
-				
-				ul.icons li a, ul.icons li span {
-					font-size: 2em;
-					border: 0;
-				}
-			
-			ul.menu li {
-				border-left: solid 1px #e0e0e0;
-				display: inline-block;
-				padding: 0 0 0 1em;
-				margin: 0 0 0 1em;
-			}
-			
-				ul.menu li:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
+	/* Header */
+
+	#header {
+		text-align: center;
+		padding: 3em 0 0 0;
+		background-color: #ffffff;
+		background-image: url("../assets/css/images/bg02.png"), url("../assets/css/images/bg02.png"), url("../assets/css/images/bg01.png");
+		background-position: top left,                  top left,                   top left;
+		background-size: 100% 6em,                  100% 6em,                   auto;
+		background-repeat: no-repeat,                   no-repeat,                  repeat;
+	}
 
 	/* Button */
-				
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],			
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -183,7 +139,7 @@ layout: default
 		border-radius: 5px;
 		border: 0;
 		color: white;
-		display: inline-block;
+		display: inline-flex;
 		padding: 0 1.5em;
 		line-height: 2.75em;
 		min-width: 9em;
@@ -191,18 +147,9 @@ layout: default
 		text-decoration: none;
 		font-weight: 600;
 		letter-spacing: -0.025em;
-	}
-
-	/* Header */
-
-	#header {
-		text-align: center;
-		padding: 3em 0 0 0;
-		background-color: #ffffff;
-		background-image: url("../assets/css/images/bg02.png"), url("../assets/css/images/bg02.png"), url("../assets/css/images/bg01.png");
-		background-position: top left,                  top left,                   top left;
-		background-size: 100% 6em,                  100% 6em,                   auto;
-		background-repeat: no-repeat,                   no-repeat,                  repeat;
+		margin: 0 2em 2em 0;
+		position: relative;
+		top: 0.25em;
 	}
 
 	/* Critical CSS for the style-narrow.css file, should only render on screens that have a width of 980px or less */
@@ -334,25 +281,16 @@ layout: default
 
 	}
 
-	/* Wrapper */
-
-			.wrapper {
-				padding: 5em 0 3em 0;
-			}
-
-				.wrapper.style1 {
-					background: #fff;
-				}
 	
-	/* Footer */
-
+	/* Footer */    
+		
 	#footer {
 		padding: 4em 0 8em 0;
 	}
 
 		#footer a {
 			color: inherit;
-			border-bottom-color: rgba(71, 71, 71 , 0.25);
+			border-bottom-color: rgba(71,71,71,0.25);
 		}
 		
 		#footer .icons {
@@ -370,7 +308,6 @@ layout: default
 			text-align: center;
 			font-size: 0.9em;
 		}
-			
 	</style>
 		<title>Scintilla CME</title>
 		<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
@@ -378,9 +315,9 @@ layout: default
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<noscript>
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css"/>
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css"/>
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css"/>
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css">
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css">
 		</noscript>
 		<script src="{{ site.baseurl }}/assets/js/anti-fouc.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
@@ -423,64 +360,70 @@ layout: default
 					</nav>
 
 			</div>
-
+	
 <!-- Main -->
 	<section class="wrapper style1">
 		<div class="container">
-			<div id="content">
-				<div class="row">
-					<div class="12u">
-						<!-- Blog -->
-							<section>
-								<header class="major">
-									<h2>The Blog</h2>
+				<div class="8u skel-cell-important">
+					<div id="content">
+
+						<!-- Content -->
+					
+							<article>
+								<header>
+									<h2>Technologies</h2>
 								</header>
-								{% for post in paginator.posts %}
-									<div class="row">
-										<section class="12u">
-											<div class="box post">
-												<a href="#" class="image left"><img src="{{ site.baseurl }}{{ post.featured }}" alt=""></a>
-													<div class="inner">
-															<h3>{{ post.title }}</h3>
-															{{ post.excerpt }}
-															<footer>
-																<a href="{{ site.baseurl }}{{ post.url }}" class="button">Continue Reading</a>
-															</footer>
-													</div>
-											</div>
-										</section>
-									</div>
-								{% endfor %}
-								<!-- Pagination links -->
-								{% if paginator.total_pages > 1 %}
-									<div class="pagination">
-									{% if paginator.previous_page %}
-										<a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-									{% else %}
-										<span>&laquo; Prev</span>
-									{% endif %}
-
-									{% for page in (1..paginator.total_pages) %}
-										{% if page == paginator.page %}
-										<em>{{ page }}</em>
-										{% elsif page == 1 %}
-										<a href="{{ site.paginate_path | relative_url | replace: 'page:num/', '' }}">{{ page }}</a>
-										{% else %}
-										<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-										{% endif %}
-									{% endfor %}
-
-									{% if paginator.next_page %}
-										<a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-									{% else %}
-										<span>Next &raquo;</span>
-									{% endif %}
-									</div>
-								{% endif %}
-							</section>
-
+								
+								<span class="image featured"><img src="{{ site.baseurl }}/assets/images//banner.jpg" alt="" /></span>
+								
+								
+							</article>
 					</div>
 				</div>
+		</div>
+	</section>
+
+	<section class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<section class="6u">
+					<div class="box post">
+						<a href="{{ site.baseurl }}/technologies/alkaline-fuel-cell/" class="button">Alkaline Fuel Cell</a>
+						<div class="inner">
+						</div>
+					</div>
+				</section>
+				<section class="6u">
+					<div class="box post">
+						<a href="{{ site.baseurl }}/technologies/anaerobic-digestion/" class="button">Anaerobic Digestion</a>
+						<div class="inner">
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="row">
+				<section class="6u">
+					<div class="box post">
+						<a href="{{ site.baseurl }}/technologies/carbon-capture/" class="button">Carbon Capture</a>
+						<div class="inner">
+						</div>
+					</div>
+				</section>
+				<section class="6u">
+					<div class="box post">
+						<a href="{{ site.baseurl }}/technologies/gasification/" class="button">Gasification</a>
+						<div class="inner">
+						</div>
+					</div>
+				</section>
+				<section class="6u">
+					<div class="box post">
+ 						<a href="{{ site.baseurl }}/technologies/gas-reformation/" class="button">Gas Reformation</a>
+						<div class="inner">
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 	</section>
 		<!-- Footer -->

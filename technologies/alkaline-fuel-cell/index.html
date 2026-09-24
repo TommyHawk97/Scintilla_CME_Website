@@ -12,7 +12,7 @@ layout: default
 	<head>
 	<style>
 
-	/* Critical CSS for above the fold content on alkaline fuel cell page */
+	/* Critical CSS for the alkaline fuel cell page */
 
 	/* Basic */
 
@@ -123,48 +123,140 @@ layout: default
 		background-repeat: no-repeat,                   no-repeat,                  repeat;
 	}
 
-	#nav {
-		background-color: #333;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../../assets/css/images/bg01.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../../assets/css/images/bg01.png");
-		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../../assets/css/images/bg01.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../../assets/css/images/bg01.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("../../assets/css/images/bg01.png");
-		padding: 0;
+	/* Critical CSS for the style-narrow.css file, should only render on screens that have a width of 980px or less */
+
+	@media screen and (min-width: 841px) and (max-width: 980px) {
+
+		body{
+			font-size: 12pt;
+			line-height: 1.5em;
+		}
+
 	}
-		#nav:after {
-			content: '';
+
+
+	/* Critical CSS for the style-narrower.css file, should only render on screens that have a width of 840px or less */
+
+	@media screen and (min-width: 737px) and (max-width: 840px) {
+
+		#header {
 			display: block;
-			width: 100%;
-			height: 0.75em;
-			background-color: #37c0fb;
-			background-image: url("../../assets/css/images/bg01.png");
 		}
 		
-		#nav > ul {
-			margin: 0;
+		body {
+			font-size: 13pt;
+		} 
+		
+		h2 {
+			margin-bottom: 0.5em;
 		}
-			#nav > ul > li {
-				position: relative;
-				display: inline-block;
-				margin-left: 1em;
+		
+		header p {
+			margin-top: -0.75em;
+		}
+		header.major {
+			text-align: center;
+			margin: 0 0 2em 0;
+		}
+		header.major h2 {
+			font-size: 1.75em;
+		}
+		header.major p {
+			top: -0.25em;
+			font-size: 1.25em;
+		}
+		#header {
+			display: block;
+		}
+
+		#banner {
+			height: 20em;
+		}
+
+
+	}
+
+	/* Critical CSS for style-mobile.css file */
+	
+	@media screen and (min-width: 481px) and (max-width: 736px) {
+
+		body {
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 11pt;
+				line-height: 1.35em;
+			} 
+			h2 {
+				font-size: 1.25em;
+				letter-spacing: 0;
+				line-height: 1.35em;
 			}
-				
-				#nav > ul > li a {
-					color: #c0c0c0;
-					text-decoration: none;
-					border: 0;
-					display: block;
-					padding: 1.5em 0.5em 1.35em 0.5em;
-				}
-				
-				#nav > ul > li:first-child {
-					margin-left: 0;
-				}
-				
-				#nav > ul> li >ul {
-					display: none;
-				}
+			
+			
+			header p {
+				margin-top: -0.5em;
+				font-size: 1em;
+			}
+			
+			header.major {
+				padding: 0 20px;
+			}
+			
+			header.major h2 {
+				font-size: 1.25em;
+			}
+			
+			header.major p {
+				top: 0;
+				margin-top: 1.25em;
+				font-size: 1em;
+			}
+			
+			#banner {
+				height:18em;
+			}
+			
+			.wrapper {
+				padding:2em 0 1px 0;
+			}
+		
+
+	}
+
+	/* Critical CSS for style-mobilep.css file */
+
+	@media screen and (max-width: 480px) {
+
+		#banner {
+			height: 20em;
+		}
+		
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		/* Lists */
+
+		ul.actions li {
+			display: block;
+			padding: 1.5em 0 0 0;
+		}
+
+			ul.actions li:first-child {
+				padding: 0;
+			}
+		
+		a:link {
+			text-decoration: none;
+		}
+		
+		.wrapper {
+			padding: 2em 20px 1px 20px;
+		}
+	
+	}
 
 	/* Wrapper */
 
@@ -174,6 +266,35 @@ layout: default
 		.wrapper.style1 {
 			background: #fff;
 		}
+	
+	/* Footer */    
+		
+	#footer {
+		padding: 4em 0 8em 0;
+	}
+
+		#footer a {
+			color: inherit;
+			border-bottom-color: rgba(71,71,71,0.25);
+		}
+		
+		#footer .icons {
+			text-align: center;
+			margin:0;
+		}
+		
+			#footer .icons a {
+				color: #999999;
+			}
+			
+		#footer .copyright {
+			color: #999999;
+			margin-top: 1.5em;
+			text-align: center;
+			font-size: 0.9em;
+		}
+
+	
 	</style>
 		<title>Scintilla CME</title>
 		<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
@@ -186,11 +307,14 @@ layout: default
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
 		</noscript>
+		<script src="{{ site.baseurl }}/assets/js/anti-fouc.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+		
+		
 		
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
 	</head>
@@ -208,7 +332,7 @@ layout: default
 						<ul>
 							{% assign current = page.url | downcase | split: '/' %}
 							<li>
-								<a href="">Technologies</a>
+								<a href="{{ site.baseurl }}/technologies">Technologies</a>
 								<ul>
 									<li><a href="{{ site.baseurl }}/technologies/alkaline-fuel-cell/">Alkaline Fuel Cell</a></li>
 									<li><a href="{{ site.baseurl }}/technologies/anaerobic-digestion/">Anaerobic Digestion</a></li>
