@@ -32,9 +32,11 @@
 			font-size: 1.25em;
 		}
 
+	
 	#skel-layers-wrapper {
 		padding-top: 44px;
 		overflow-x: hidden;
+		height: 100vh; /* skel layers wrapper set to 100% of the height of the viewport in order to fix the animation of the sidebar menu on mobile devices. */
 	}
 
 /* Box */

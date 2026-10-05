@@ -6,8 +6,13 @@
 
 /* Basic */
 
+	/* skel layers wrapper set to 100% of the height of the viewport 
+	in order to fix the animation of the sidebar menu on mobile devices. */
+	#skel-layers-wrapper {
+		height: 100vh;
+	}
+
 	body, input, select, textarea {
 		font-size: 12pt;
 		line-height: 1.5em;
 	}
-

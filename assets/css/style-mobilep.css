@@ -77,8 +77,12 @@
 
 /* Wrapper */
 
+	#skel-layers-wrapper {
+		height: 100vh; /* skel layers wrapper set to 100% of the height of the viewport in order to fix the animation of the sidebar menu on mobile devices. */
+	}
+
 	.wrapper {
-		padding: 33.7% 20px 33.7% 20px;
+		padding: 2em 20px 1px 20px;
 	}
 
 /* CTA */
