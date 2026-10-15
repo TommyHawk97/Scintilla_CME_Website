@@ -35,8 +35,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-sass:  
-  style: compressed # Minifies output CSS  
+sass: 
+  style: compressed # Minifies output CSS 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
