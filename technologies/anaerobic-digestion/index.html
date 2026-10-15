@@ -179,7 +179,8 @@ layout: default
 	/* Critical CSS for style-mobile.css file */
 	
 	@media screen and (min-width: 481px) and (max-width: 736px) {
-		body {
+			
+			body {
 				font-family: 'Source Sans Pro', sans-serif;
 				font-size: 11pt;
 				line-height: 1.35em;
@@ -224,6 +225,7 @@ layout: default
 			height: 20em;
 		}
 		
+		/* Image */
 		img {
 			display: block;
 			margin-left: auto;
@@ -283,7 +285,7 @@ layout: default
 			font-size: 0.9em;
 		}
 	</style>
-		<title>Scintilla CME</title>
+		<title>{{ page.title }}</title>
 		<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
