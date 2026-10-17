@@ -1,22 +1,4 @@
-/*
-	Arcana by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Basic */
-
-	/* skel layers wrapper set to 100% of the height of the viewport 
-	in order to fix the animation of the sidebar menu on mobile devices. */
-	#skel-layers-wrapper {
-		height: 100vh;
-	}
-
-	body, input, select, textarea {
-		font-size: 12pt;
-		line-height: 1.5em;
-	}
-
+#skel-layers-wrapper{height:100vh}body,input,select,textarea{font-size:12pt;line-height:1.5em}
 /* Center the loader */
 .loader-wrapper {
   width: 100%;

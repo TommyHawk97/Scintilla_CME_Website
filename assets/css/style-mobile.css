@@ -1,51 +1,4 @@
-/*
-	Arcana by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Basic */
-
-	body, input, select, textarea {
-		font-size: 11pt;
-		line-height: 1.35em;
-	}
-
-	h2 {
-		font-size: 1.25em;
-		letter-spacing: 0;
-		line-height: 1.35em;
-	}
-
-	h3 {
-		font-size: 1em;
-		letter-spacing: 0;
-		line-height: 1.35em;
-	}
-
-	img {
-		display: block;
-		max-width: 100%;
-	}
-
-	header p {
-		margin-top: -0.5em;
-		font-size: 1em;
-	}
-
-	header.major {
-		padding: 0 20px;
-	}
-
-		header.major h2 {
-			font-size: 1.25em;
-		}
-
-		header.major p {
-			top: 0;
-			margin-top: 1.25em;
-			font-size: 1em;
-		} 
+body,input,select,textarea{font-size:11pt;line-height:1.35em}h2{font-size:1.25em;letter-spacing:0;line-height:1.35em}h3{font-size:1em;letter-spacing:0;line-height:1.35em}img{display:block;max-width:100%}header p{margin-top:-0.5em;font-size:1em}header.major{padding:0 20px}header.major h2{font-size:1.25em}header.major p{top:0;margin-top:1.25em;font-size:1em}ul.menu li{border:0;padding:0;margin:0;display:block;line-height:2em}#banner{height:18em}#skel-layers-wrapper{height:100vh}.wrapper{padding:2em 0 1px 0}
 
 /* Center the loader */
 .loader-wrapper {
@@ -89,29 +42,3 @@
   75% { height: 100%;}
   100% { height: 0%;}
 }
-
-/* Lists */
-
-	ul.menu li {
-		border: 0;
-		padding: 0;
-		margin: 0;
-		display: block;
-		line-height: 2em;
-	}
-
-/* Banner */
-
-	#banner {
-		height: 18em;
-	}
-
-/* Wrapper */
-
-	#skel-layers-wrapper {
-		height: 100vh; /* skel layers wrapper set to 100% of the height of the viewport in order to fix the animation of the sidebar menu on mobile devices. */
-	}
-
-	.wrapper {
-		padding: 2em 0 1px 0;
-	}

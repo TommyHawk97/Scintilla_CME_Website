@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 @import url('font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
-
 @import 'vars';
 @import 'mixins';
 
@@ -421,67 +420,6 @@
 			
 			tbody {
 			}
-		}
-	}
-		
-/* Button */
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		@include vendor-property('appearance', 'none');
-		@include vendor-property('transition', 'background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out');
-		background-color: $color-accent-bg;
-		@include vendor-value('background-image', 'linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png")');
-		border-radius: $size-radius;
-		border: 0;
-		color: $color-accent-fg;
-		cursor: pointer;
-		display: inline-block;
-		padding: 0 1.5em;
-		line-height: 2.75em;
-		min-width: 9em;
-		text-align: center;
-		text-decoration: none;
-		font-weight: 600;
-		letter-spacing: -0.025em;
-
-		&:hover {
-			background-color: lighten($color-accent-bg, 5);
-			color: $color-accent-fg !important;
-		}
-
-		&:active {
-			background-color: darken($color-accent-bg, 5);
-			color: $color-accent-fg;
-		}
-
-		&.alt {
-			background-color: #555555;
-			color: #fff;
-			
-			&:hover {
-				background-color: lighten(#555555, 5);
-			}
-
-			&:active {
-				background-color: darken(#555555, 5);
-			}
-		}	
-
-		&.icon {
-			&:before {
-				margin-right: 0.5em;
-			}
-		}
-
-		&.fit {
-			width: 100%;
-		}
-		
-		&.small {
-			font-size: 0.8em;
 		}
 	}
 

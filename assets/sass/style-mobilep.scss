@@ -7,21 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Lists */
-
-	ul {
-		&.actions {
-			li {
-				display: block;
-				padding: 1.5em 0 0 0;
-		
-				&:first-child {
-					padding: 0;
-				}
-			}
-		}
-	}
-
 /* Icon */
 
 	.icon {
@@ -68,14 +53,23 @@
 /* Banner */
 
 	#banner {
-		height: 20em;
-		
+
 		header {
 			padding: 20px;
 		}
 	}
 
+/* Text Decoration */
+
+	a:link {
+		text-decoration: none;
+	}
+
 /* Wrapper */
+
+	#skel-layers-wrapper {
+		height: 100vh; /* skel layers wrapper set to 100% of the height of the viewport in order to fix the animation of the sidebar menu on mobile devices. */
+	}
 
 	.wrapper {
 		padding: 2em 20px 1px 20px;
